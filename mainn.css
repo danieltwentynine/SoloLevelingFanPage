@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -273,4 +275,226 @@ footer {
 
 footer p {
     color: rgb(0, 0, 0);
+}
+
+.btn-menu {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background-image: none;
+        background-color: rgb(35, 35, 35);
+        font-family: "Artifika", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .container {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    header .container {
+        display: block;
+        text-align: center;
+    }
+    
+    header {
+        padding: 16px 0;
+        background-color: rgba(255, 255, 255, 0.116);
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .btn-menu button{
+        margin-top: 1em;
+        background-color: rgba(0, 0, 0, 0.544);
+        color: white;
+        text-decoration: none;
+        border: none;
+        display: inline-block;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .nav-bar {
+        display: none;
+        margin-left: 16px;
+    }
+
+    .nav-bar li a {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-bar li a:hover {
+        display: none;
+    }
+
+    #historia .container {
+        display: block;
+    }
+    
+    #historia {
+        margin-top: 0;
+    }
+    
+    #historia .container img {
+        margin-right: 0;
+        width: 100%;
+        border-radius: initial;
+    }
+    
+    .story-box article button {
+        background-color: rgba(0, 0, 0, 0.544);
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        border: none;
+        display: inline-block;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    
+    .story-box article a:hover {
+        display: none;
+    }
+    
+    #personagens {
+        margin-top: 3em;
+    }
+    
+    #personagens h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    
+    .articles {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px;
+        background-color: rgba(46, 46, 46, 0.534);
+        border-radius: 0;
+    }
+    
+    .articles img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    
+    .articles article {
+        width: 100%;
+    }
+    
+    .articles article p {
+        color: white;
+    }
+    
+    .articles article h4{
+        color: #fff;
+        padding: 8px;
+    }
+
+    .articles article button {
+        background-color: rgba(0, 0, 0, 0.544);
+        margin-top: 10px;
+        color: white;
+        display: inline-block;
+        border: none;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 2em;
+    }
+
+    .articles article p {
+        margin: 8px;
+        padding-bottom: 8px;
+    }
+
+    .articles article a:hover {
+        display: none;
+    }
+    
+    .container button {
+        padding: 8px;
+        display: inline-block;
+        margin-top: 1em;
+        background-color: rgb(0, 44, 78);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    #about {
+        display: block;
+        margin-top: 3rem;
+    }
+    
+    #about h3 {
+        color: white;
+        margin-bottom: 8px;
+        text-shadow: initial;
+    }
+    
+    #about .container article p {
+        padding: 16px;
+    }
+    
+    #contact {
+        padding: 24px;
+        color: white;
+    }
+    
+    #contact .contact-method {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #contact h3 {
+        margin-bottom: 16px;
+        text-shadow: initial;
+        padding-left: 8px;
+    }
+    
+    #contact div h4 {
+        text-shadow: initial;
+    }
+    
+    #contact form input, form textarea, form button {
+        width: 100%;
+    }
+    
+    #contact form button:hover {
+        display: none;
+    }
+    
+    .creator {
+        display: none;
+    }
+    
+    .contact-method .creator {
+        display: none;
+    }
+    
+    footer {
+        background-color: rgba(255, 255, 255, 0.116);
+        text-align: center;
+        padding: 16px 0;
+    }
+    
+    footer p {
+        color: rgb(0, 0, 0);
+    }
 }
